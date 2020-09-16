@@ -20,4 +20,4 @@ COPY --from=build-app /app/static ./static
 COPY --from=build-runtime /app/node_modules ./node_modules
 
 EXPOSE 3000
-CMD ["node", "dist/build"]
+CMD ["node", "dist"]
